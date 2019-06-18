@@ -26,7 +26,7 @@ function promedio(){
     var prom = 0.0;
 
     for(i=0; i<jsObj.alumnos.length; i++){
-        prom += jsObj.alumnos[i].nota;
+        prom += jsObj.alumnos[i].nota/jsObj.alumnos.length;
         document.getElementById('promedio').innerHTML = out + prom;
     }
 };
